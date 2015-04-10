@@ -1,0 +1,21 @@
+{
+//   "background": {
+//      "scripts": ["js/settings.js", "js/jquery.min.js", "js/main.js"]
+//   },
+   "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html",
+      "default_title": "douban.fm"
+   },
+   "description": "douban fm extensions for chrome",
+   "icons": {
+      "128": "logo.png",
+      "16": "logo.png",
+      "48": "logo.png"
+   },
+   "manifest_version": 2,
+   "name": "douban.fm",
+   "permissions": [ "notifications", "cookies", "tabs", "http://douban.fm/", "http://douban.com/", "http://www.douban.com/", "http://music.baidu.com/*", "http://sug.music.baidu.com/*" ],
+   "short_name": "豆瓣FM",
+   "version": "0.1.0"
+}
