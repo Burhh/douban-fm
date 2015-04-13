@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha FE tests</title>
+    <link rel="stylesheet" media="all" href="vendor/mocha.css">
+</head>
+<body>
+<div id="mocha"><p><a href=".">Mocha FE Unit Test</a></p></div>
+<div id="messages"></div>
+<div id="fixtures"></div>
+<div id='testElement'>
+    <h1></h1>
+</div>
+<script src="vendor/mocha.js"></script>
+<script src="vendor/chai.js"></script>
+<script>
+    mocha.setup('bdd');
+</script>
+</body>
+</html>
+<script src="/libs/sea.js"></script>
+<script>
+    seajs.config({
+        base: "/test/units"
+    });
+    seajs.use(
+            ['test.config'],
+            function() {
+                mocha.run();
+            }
+    )
+</script>

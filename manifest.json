@@ -4,7 +4,7 @@
 //   },
    "browser_action": {
       "default_icon": "logo.png",
-      "default_popup": "popup.html",
+      "default_popup": "app/popup.html",
       "default_title": "douban.fm"
    },
    "description": "douban fm extensions for chrome",
